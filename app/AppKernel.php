@@ -48,6 +48,14 @@ class AppKernel extends Kernel
 
             new Sonata\PageBundle\SonataPageBundle(),
 
+            /* Sonata media bundle */
+
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+
+            new Sonata\MediaBundle\SonataMediaBundle(),
+
+            new Sonata\IntlBundle\SonataIntlBundle(),
+
             /* Application */
 
             new AppBundle\AppBundle(),
@@ -57,6 +65,8 @@ class AppKernel extends Kernel
             new \Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
 
             new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
+
+            new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
 
         );
 
