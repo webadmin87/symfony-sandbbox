@@ -19,13 +19,26 @@
         "sensio/distribution-bundle": "~3.0,>=3.0.12",
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
-        "sonata-project/admin-bundle": "~2.3",
+
+        "sonata-project/admin-bundle": "2.3.2",
         "sonata-project/doctrine-orm-admin-bundle": "~2.3",
-        "sonata-project/user-bundle": "~2.2"
+        "sonata-project/user-bundle": "~2.2",
+        "sonata-project/page-bundle": "~2.3",
+        "sonata-project/seo-bundle": "~1.1",
+        "sonata-project/cache-bundle": "~2.2",
+        "sonata-project/notification-bundle": "~2.3",
+        "sonata-project/datagrid-bundle": "2.2.*@dev"
+
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/sonata-project/SonataAdminBundle"
+        }
+    ],
     "scripts": {
         "post-root-package-install": [
             "SymfonyStandard\\Composer::hookRootPackageInstall"

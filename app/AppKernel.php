@@ -27,14 +27,36 @@ class AppKernel extends Kernel
 
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
 
+            /* Sonata User */
+
             new FOS\UserBundle\FOSUserBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+
+            /* Sonata cache */
+
+            new Sonata\CacheBundle\SonataCacheBundle(),
+
+            /* Sonata notification  */
+
+            new Sonata\NotificationBundle\SonataNotificationBundle(),
+
+            /* Sonata seo */
+
+            new Sonata\SeoBundle\SonataSeoBundle(),
+
+            /* Sonata pages */
+
+            new Sonata\PageBundle\SonataPageBundle(),
 
             /* Application */
 
             new AppBundle\AppBundle(),
 
             new \Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+
+            new \Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
+
+            new Application\Sonata\NotificationBundle\ApplicationSonataNotificationBundle(),
 
         );
 
